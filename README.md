@@ -10,6 +10,7 @@ Hi! 👋 I'm Srashti Chauhan, a beginner passionate about programming and web de
 -  [Weather Web Application](https://lnkd.in/eAS2dqt4)
 - [Tic Tac Toe Game](https://github.com/SrashtiChauhan/Tic-Tac-Toe-Game)
 - [Simple-Web-portfolio](https://github.com/SrashtiChauhan/Simple-Web-Portfolio)
+- [Rock-Paper-Scissors](https://github.com/SrashtiChauhan/Rock-Paper-Scissors)
 - ---
   
 - 🚀 I enjoy participating in hackathons to grow my skills and collaborate with others.
