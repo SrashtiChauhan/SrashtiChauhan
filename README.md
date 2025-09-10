@@ -4,7 +4,7 @@ Hi! 👋 I'm Srashti Chauhan, a beginner passionate about programming and web de
 
 - 🌱 I’m currently learning Data Structures and Algorithms (DSA) in C++ and exploring other technologies like HTML, CSS, JavaScript, and Python.
 - 
-- 👩‍💻 I love building small projects to apply what I learn in my beginner stage.
+- 👩‍💻 I love building  projects to apply what I learn .
 - ---
 - Check out my
 -  [Weather Web Application](https://lnkd.in/eAS2dqt4)
