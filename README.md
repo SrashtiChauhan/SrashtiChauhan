@@ -11,6 +11,8 @@ Hi! 👋 I'm Srashti Chauhan, a beginner passionate about programming and web de
 - [Tic Tac Toe Game](https://github.com/SrashtiChauhan/Tic-Tac-Toe-Game)
 - [Simple-Web-portfolio](https://github.com/SrashtiChauhan/Simple-Web-Portfolio)
 - [Rock-Paper-Scissors](https://github.com/SrashtiChauhan/Rock-Paper-Scissors)
+- [Edu-Circle-Website](https://github.com/SrashtiChauhan/Edu-Circle-Website)
+- [GitHub User Finder](https://github.com/SrashtiChauhan/Github-user-finder)
 - ---
   
 - 🚀 I enjoy participating in hackathons to grow my skills and collaborate with others.
