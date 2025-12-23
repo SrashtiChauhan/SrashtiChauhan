@@ -74,16 +74,12 @@
 
 ### 📊 GitHub Stats
 
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=srashtichauhan&show_icons=true&hide=prs,issues,contribs&rank_icon=github" />
-</p>
-
-<p>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=srashtichauhan&layout=compact" />
-</p>
-
-<p>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=srashtichauhan" />
+<!-- Compact, dark GitHub stat cards -->
+<p align="left">
+ <p> <img alt="Srashti's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=SrashtiChauhan&show_icons=true&theme=dark&hide_border=true&count_private=true" /></p>
+ 
+  <p><img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SrashtiChauhan&layout=compact&theme=dark&hide_border=true" /></p>
+  
 </p>
 
 ---
