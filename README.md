@@ -26,7 +26,7 @@
 - Backend scalability & system design concepts  
 
 ### 👨‍💻 Projects
-- All my projects: 👉 https://github.com/SrashtiChauhan  
+- All my projects: 👉 https://github.com/SrashtiChauhan?tab=repositories 
 
 ### 💬 Ask Me About
 - Full-Stack Web Development  
