@@ -72,15 +72,9 @@
 
 ---
 
-### 📊 GitHub Stats
 
-<!-- Compact, dark GitHub stat cards -->
-<p align="left">
- <p> <img alt="Srashti's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=SrashtiChauhan&show_icons=true&theme=dark&hide_border=true&count_private=true" /></p>
- 
-  <p><img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SrashtiChauhan&layout=compact&theme=dark&hide_border=true" /></p>
-  
-</p>
+
+
 
 ---
 
