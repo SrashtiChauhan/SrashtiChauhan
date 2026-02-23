@@ -64,7 +64,7 @@
 
 ---
 
-## 🛠️ Languages & Tools (Structured & Horizontal)
+## 🛠️ Languages & Tools 
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=cpp,python,html,css,js,react,nodejs,mongodb,mysql,tailwind,postman&theme=dark"/>
