@@ -44,9 +44,9 @@
   <a href="https://leetcode.com/u/SrashtiChauhan/" target="_blank">
     <img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=yellow"/>
   </a>
-  <a href="https://www.codechef.com/users/srashti_9259" target="_blank">
+  <!-- <a href="https://www.codechef.com/users/srashti_9259" target="_blank">
     <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
-  </a>
+  </a> -->
   <a href="https://www.hackerrank.com/srashtichauhan24" target="_blank">
     <img src="https://img.shields.io/badge/HackerRank-0E141E?style=for-the-badge&logo=hackerrank&logoColor=green"/>
   </a>
