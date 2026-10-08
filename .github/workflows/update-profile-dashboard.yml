@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Run approximately once every hour
+    # Refresh approximately every hour
     - cron: "17 * * * *"
 
 permissions:
@@ -20,7 +20,8 @@ jobs:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Collect latest GitHub activity
+
+      - name: Collect latest GitHub project activity
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -28,36 +29,58 @@ jobs:
 
           mkdir -p data
 
-          echo "Fetching public repositories..."
+          echo "Discovering repositories owned by SrashtiChauhan..."
 
-          # Fetch all public repositories owned by SrashtiChauhan.
+
+          # --------------------------------------------------
+          # DISCOVER ALL REPOSITORIES
+          # --------------------------------------------------
+
+          gh repo list SrashtiChauhan \
+            --limit 100 \
+            --json name,fullName,htmlUrl,pushedAt,updatedAt,defaultBranch,isFork,isArchived,stargazerCount,forkCount \
+            > data/all-repositories.json
+
+
+          # --------------------------------------------------
+          # FILTER PROJECTS
           #
-          # --paginate ensures we don't stop at the first page
-          # when the account has more than 100 repositories.
-          #
-          # We sort by pushed_at so the most recently active
-          # projects appear first.
+          # Exclude:
+          # 1. Profile README repository
+          # 2. Forked repositories
+          # 3. Archived repositories
+          # --------------------------------------------------
 
-          gh api \
-            --paginate \
-            "users/SrashtiChauhan/repos?per_page=100&type=owner&sort=pushed&direction=desc" \
-            --jq '.[] | {
-              name: .name,
-              full_name: .full_name,
-              html_url: .html_url,
-              pushed_at: .pushed_at,
-              updated_at: .updated_at,
-              default_branch: .default_branch,
-              stars: .stargazers_count,
-              forks: .forks_count
-            }' \
-            > data/repositories.tmp.jsonl
-
-
-          echo "Collecting repository activity..."
+          jq '
+            map(
+              select(
+                .name != "SrashtiChauhan"
+                and .isFork == false
+                and .isArchived == false
+              )
+            )
+            | sort_by(.pushedAt)
+            | reverse
+          ' \
+          data/all-repositories.json \
+          > data/active-repositories.json
 
 
-          # Build the final JSON array.
+          echo ""
+          echo "=========================================="
+          echo "ACTIVE PROJECTS DISCOVERED"
+          echo "=========================================="
+
+          jq -r '
+            .[]
+            | "\(.pushedAt)  \(.name)"
+          ' data/active-repositories.json
+
+
+          # --------------------------------------------------
+          # CREATE ACTIVITY DATA
+          # --------------------------------------------------
+
           echo "[" > data/project-activity.json
 
           first=true
@@ -68,10 +91,13 @@ jobs:
             repo=$(echo "$repository" | jq -r '.name')
 
 
+            echo ""
             echo "Processing: $repo"
 
 
-            # Get the latest commit from this repository.
+            # ------------------------------------------------
+            # LATEST COMMIT
+            # ------------------------------------------------
 
             latest_commit=$(gh api \
               "repos/SrashtiChauhan/$repo/commits?per_page=1" \
@@ -82,22 +108,33 @@ jobs:
               }')
 
 
-            # Count commits currently visible in the repository.
+            # ------------------------------------------------
+            # RECENT COMMIT COUNT
             #
-            # We use pagination so repositories with more than
-            # 100 commits are handled correctly.
+            # Count commits from the last 30 days.
+            # This gives us useful real activity for the
+            # analytics graph instead of a fake number.
+            # ------------------------------------------------
 
-            commit_count=$(gh api \
+            since=$(date -u -d "30 days ago" +"%Y-%m-%dT%H:%M:%SZ")
+
+
+            recent_commits=$(gh api \
               --paginate \
-              "repos/SrashtiChauhan/$repo/commits?per_page=100" \
-              --jq '.[]' | jq -s 'length')
+              "repos/SrashtiChauhan/$repo/commits?since=$since&per_page=100" \
+              --jq '.[]' \
+              | jq -s 'length')
 
+
+            # ------------------------------------------------
+            # BUILD PROJECT OBJECT
+            # ------------------------------------------------
 
             project=$(echo "$repository" | jq \
-              --argjson commits "$commit_count" \
+              --argjson recent_commits "$recent_commits" \
               --argjson latest "$latest_commit" \
               '. + {
-                commit_count: $commits,
+                recent_commit_count: $recent_commits,
                 latest_commit: $latest
               }')
 
@@ -111,21 +148,33 @@ jobs:
 
             first=false
 
-          done < data/repositories.tmp.jsonl
+          done < <(
+            jq -c '.[]' data/active-repositories.json
+          )
 
 
           echo "]" >> data/project-activity.json
 
 
-          rm data/repositories.tmp.jsonl
+          # --------------------------------------------------
+          # CLEAN TEMPORARY FILES
+          # --------------------------------------------------
+
+          rm data/all-repositories.json
+          rm data/active-repositories.json
 
 
           echo ""
-          echo "======================================"
-          echo "Generated GitHub project activity"
-          echo "======================================"
+          echo "=========================================="
+          echo "FINAL PROJECT ACTIVITY"
+          echo "=========================================="
+
           cat data/project-activity.json
 
+
+      # ----------------------------------------------------
+      # SAVE UPDATED DATA
+      # ----------------------------------------------------
 
       - name: Commit updated activity data
 
@@ -146,7 +195,8 @@ jobs:
 
           else
 
-            git commit -m "chore: update project activity"
+            git commit \
+              -m "chore: update project activity"
 
             git push
 
