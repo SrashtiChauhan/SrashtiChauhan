@@ -1,0 +1,103 @@
+[
+{
+  "default_branch": "main",
+  "forks": 0,
+  "full_name": "SrashtiChauhan/QueryNest-ai",
+  "html_url": "https://github.com/SrashtiChauhan/QueryNest-ai",
+  "name": "QueryNest-ai",
+  "pushed_at": "2026-09-20T09:13:27Z",
+  "stars": 0,
+  "updated_at": "2026-09-20T09:13:30Z",
+  "commit_count": 25,
+  "latest_commit": {
+    "date": "2026-09-20T09:13:15Z",
+    "message": "Separate RAG prompt construction from pipeline",
+    "sha": "b1117d34990b17dffebc032253ea625984781b0c"
+  }
+}
+,
+{
+  "default_branch": "main",
+  "forks": 0,
+  "full_name": "SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
+  "html_url": "https://github.com/SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
+  "name": "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
+  "pushed_at": "2026-10-08T15:56:01Z",
+  "stars": 0,
+  "updated_at": "2026-10-08T15:56:04Z",
+  "commit_count": 64,
+  "latest_commit": {
+    "date": "2026-10-08T15:55:50Z",
+    "message": "feat: connect workflow dashboard to backend API",
+    "sha": "68507f66ff525424a73c92cfc18b136be0f9f9f0"
+  }
+}
+,
+{
+  "default_branch": "main",
+  "forks": 1,
+  "full_name": "SrashtiChauhan/Buildora-AI",
+  "html_url": "https://github.com/SrashtiChauhan/Buildora-AI",
+  "name": "Buildora-AI",
+  "pushed_at": "2026-05-05T18:54:59Z",
+  "stars": 0,
+  "updated_at": "2026-05-05T18:55:04Z",
+  "commit_count": 20,
+  "latest_commit": {
+    "date": "2026-05-05T18:54:59Z",
+    "message": "Merge pull request #1 from SrashtiChauhan/personalBranch\n\nRefactor backend logic and clean up frontend code; fix validation and routing issues",
+    "sha": "89c2c02e325b0d8309773f11e15c95b7e62db957"
+  }
+}
+,
+{
+  "default_branch": "main",
+  "forks": 0,
+  "full_name": "SrashtiChauhan/PulseMeet",
+  "html_url": "https://github.com/SrashtiChauhan/PulseMeet",
+  "name": "PulseMeet",
+  "pushed_at": "2026-06-10T11:20:49Z",
+  "stars": 0,
+  "updated_at": "2026-06-10T11:20:54Z",
+  "commit_count": 16,
+  "latest_commit": {
+    "date": "2026-06-10T11:20:49Z",
+    "message": "Update README to remove internship details\n\nRemoved specific internship reference from project description and author section.",
+    "sha": "bcb5a332c83a81f766f41c68bf493ad40d358890"
+  }
+}
+,
+{
+  "default_branch": "main",
+  "forks": 0,
+  "full_name": "SrashtiChauhan/college-discovery-platform",
+  "html_url": "https://github.com/SrashtiChauhan/college-discovery-platform",
+  "name": "college-discovery-platform",
+  "pushed_at": "2026-05-09T04:49:33Z",
+  "stars": 1,
+  "updated_at": "2026-05-09T04:49:36Z",
+  "commit_count": 4,
+  "latest_commit": {
+    "date": "2026-05-09T04:49:32Z",
+    "message": "Update README.md",
+    "sha": "1945c68274f5ad287fb52f8f8d1d04ab7b9112a6"
+  }
+}
+,
+{
+  "default_branch": "main",
+  "forks": 0,
+  "full_name": "SrashtiChauhan/Frontend-UI-Collection",
+  "html_url": "https://github.com/SrashtiChauhan/Frontend-UI-Collection",
+  "name": "Frontend-UI-Collection",
+  "pushed_at": "2026-08-30T09:27:26Z",
+  "stars": 0,
+  "updated_at": "2026-08-30T09:28:08Z",
+  "commit_count": 11,
+  "latest_commit": {
+    "date": "2026-08-30T09:26:05Z",
+    "message": "art work ui",
+    "sha": "a5df64e63e3c07d339f660384f711624ee744d2c"
+  }
+}
+]
