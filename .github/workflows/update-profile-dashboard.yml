@@ -1,0 +1,101 @@
+name: Update Profile Dashboard
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # GitHub checks for updates approximately every hour
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Collect GitHub project activity
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p data
+
+          repos=(
+            "QueryNest-ai"
+            "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform"
+            "Buildora-AI"
+            "PulseMeet"
+            "college-discovery-platform"
+            "Frontend-UI-Collection"
+          )
+
+          echo "[" > data/project-activity.json
+
+          first=true
+
+          for repo in "${repos[@]}"; do
+
+            response=$(gh api \
+              "repos/SrashtiChauhan/$repo" \
+              --jq '{
+                name: .name,
+                full_name: .full_name,
+                html_url: .html_url,
+                pushed_at: .pushed_at,
+                updated_at: .updated_at,
+                default_branch: .default_branch,
+                stars: .stargazers_count,
+                forks: .forks_count
+              }')
+
+            commits=$(gh api \
+              "repos/SrashtiChauhan/$repo/commits?per_page=100" \
+              --jq 'length')
+
+            latest_commit=$(gh api \
+              "repos/SrashtiChauhan/$repo/commits?per_page=1" \
+              --jq '.[0] | {
+                sha: .sha,
+                message: .commit.message,
+                date: .commit.author.date
+              }')
+
+            project=$(jq \
+              --argjson commits "$commits" \
+              --argjson latest "$latest_commit" \
+              '. + {
+                commit_count: $commits,
+                latest_commit: $latest
+              }' <<< "$response")
+
+            if [ "$first" = false ]; then
+              echo "," >> data/project-activity.json
+            fi
+
+            echo "$project" >> data/project-activity.json
+
+            first=false
+          done
+
+          echo "]" >> data/project-activity.json
+
+          echo "Generated project activity:"
+          cat data/project-activity.json
+
+      - name: Commit updated activity data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/project-activity.json
+
+          if git diff --cached --quiet; then
+            echo "No activity changes detected."
+          else
+            git commit -m "chore: update project activity"
+            git push
+          fi
