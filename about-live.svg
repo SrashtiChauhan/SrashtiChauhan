@@ -1,0 +1,528 @@
+<svg
+  width="1200"
+  height="430"
+  viewBox="0 0 1200 430"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="55%" stop-color="#0b1024"/>
+      <stop offset="100%" stop-color="#120b24"/>
+    </linearGradient>
+
+    <!-- Neon -->
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <!-- Cyan/Purple card -->
+    <linearGradient id="cyanCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e2630"/>
+      <stop offset="100%" stop-color="#10152b"/>
+    </linearGradient>
+
+    <linearGradient id="purpleCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#191331"/>
+      <stop offset="100%" stop-color="#10152b"/>
+    </linearGradient>
+
+    <!-- Grid -->
+    <pattern
+      id="grid"
+      width="40"
+      height="40"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M 40 0 L 0 0 0 40"
+        fill="none"
+        stroke="#334155"
+        stroke-opacity="0.16"
+      />
+    </pattern>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+
+  <!-- ===================================================== -->
+  <!-- BACKGROUND                                            -->
+  <!-- ===================================================== -->
+
+  <rect
+    width="1200"
+    height="430"
+    rx="26"
+    fill="url(#bg)"
+  />
+
+  <rect
+    width="1200"
+    height="430"
+    rx="26"
+    fill="url(#grid)"
+  />
+
+
+  <!-- Ambient glow -->
+
+  <circle
+    cx="110"
+    cy="80"
+    r="100"
+    fill="#06b6d4"
+    opacity="0.07"
+    filter="url(#glow)"
+  />
+
+  <circle
+    cx="1100"
+    cy="360"
+    r="120"
+    fill="#8b5cf6"
+    opacity="0.08"
+    filter="url(#glow)"
+  />
+
+
+  <!-- ===================================================== -->
+  <!-- HEADER                                                -->
+  <!-- ===================================================== -->
+
+  <text
+    x="60"
+    y="65"
+    fill="#22d3ee"
+    font-family="monospace"
+    font-size="13"
+    letter-spacing="3"
+  >
+    // WHAT I BUILD
+  </text>
+
+  <text
+    x="60"
+    y="105"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="30"
+    font-weight="800"
+  >
+    Building. Learning. Shipping.
+  </text>
+
+  <text
+    x="60"
+    y="132"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="14"
+  >
+    FRONTEND • BACKEND • AI/ML • OPEN SOURCE
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- CARD 1 — AI                                          -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="60"
+    y="170"
+    width="255"
+    height="190"
+    rx="20"
+    fill="url(#cyanCard)"
+    stroke="#22d3ee"
+    stroke-opacity="0.45"
+  />
+
+  <!-- animated top line -->
+
+  <rect
+    x="60"
+    y="170"
+    width="255"
+    height="3"
+    rx="2"
+    fill="#22d3ee"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.25;1;0.25"
+      dur="2.5s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+  <text
+    x="85"
+    y="215"
+    fill="#67e8f9"
+    font-family="monospace"
+    font-size="15"
+    font-weight="700"
+  >
+    01 / FRONTEND
+  </text>
+
+  <text
+    x="85"
+    y="250"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+  >
+    Web Interfaces
+  </text>
+
+  <text
+    x="85"
+    y="278"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+   React • Next.js • TypeScript
+
+  </text>
+
+  <text
+    x="85"
+    y="300"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    Tailwind CSS • UI Development
+  </text>
+
+  <!-- AI node -->
+
+  <circle
+    cx="275"
+    cy="330"
+    r="8"
+    fill="#22d3ee"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="r"
+      values="6;10;6"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <!-- ===================================================== -->
+  <!-- CARD 2 — FULL STACK                                  -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="330"
+    y="170"
+    width="255"
+    height="190"
+    rx="20"
+    fill="url(#purpleCard)"
+    stroke="#8b5cf6"
+    stroke-opacity="0.45"
+  />
+
+  <rect
+    x="330"
+    y="170"
+    width="255"
+    height="3"
+    rx="2"
+    fill="#8b5cf6"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.25;1;0.25"
+      dur="2.8s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+  <text
+    x="355"
+    y="215"
+    fill="#c4b5fd"
+    font-family="monospace"
+    font-size="15"
+    font-weight="700"
+  >
+    02 / FULL STACK
+  </text>
+
+  <text
+    x="355"
+    y="250"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+  >
+    Web Platforms
+  </text>
+
+  <text
+    x="355"
+    y="278"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    React • Next.js • Node.js
+  </text>
+
+  <text
+    x="355"
+    y="300"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    APIs • PostgreSQL • MongoDB
+  </text>
+
+  <!-- code cursor -->
+
+  <text
+    x="355"
+    y="333"
+    fill="#a78bfa"
+    font-family="monospace"
+    font-size="15"
+  >
+    &gt;_ build()
+    <animate
+      attributeName="opacity"
+      values="1;0.2;1"
+      dur="1.2s"
+      repeatCount="indefinite"
+    />
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- CARD 3 — DEVOPS                                     -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="600"
+    y="170"
+    width="255"
+    height="190"
+    rx="20"
+    fill="url(#cyanCard)"
+    stroke="#06b6d4"
+    stroke-opacity="0.45"
+  />
+
+  <rect
+    x="600"
+    y="170"
+    width="255"
+    height="3"
+    rx="2"
+    fill="#06b6d4"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.25;1;0.25"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+  <text
+    x="625"
+    y="215"
+    fill="#67e8f9"
+    font-family="monospace"
+    font-size="15"
+    font-weight="700"
+  >
+    03 / AI-ML
+  </text>
+
+  <text
+    x="625"
+    y="250"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+  >
+    Intelligent Systems
+  </text>
+
+  <text
+    x="625"
+    y="278"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    Python • Machine Learning
+  </text>
+
+  <text
+    x="625"
+    y="300"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    Computer Vision • RAG
+  </text>
+
+  <!-- pipeline -->
+
+  <circle cx="635" cy="335" r="6" fill="#10b981"/>
+  <line
+    x1="641"
+    y1="335"
+    x2="800"
+    y2="335"
+    stroke="#10b981"
+    stroke-width="2"
+    stroke-dasharray="8 8"
+  >
+    <animate
+      attributeName="stroke-dashoffset"
+      from="0"
+      to="-32"
+      dur="1s"
+      repeatCount="indefinite"
+    />
+  </line>
+
+  <circle cx="810" cy="335" r="6" fill="#10b981"/>
+
+
+  <!-- ===================================================== -->
+  <!-- CARD 4 — OPEN SOURCE                                -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="870"
+    y="170"
+    width="270"
+    height="190"
+    rx="20"
+    fill="url(#purpleCard)"
+    stroke="#f472b6"
+    stroke-opacity="0.45"
+  />
+
+  <rect
+    x="870"
+    y="170"
+    width="270"
+    height="3"
+    rx="2"
+    fill="#f472b6"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.25;1;0.25"
+      dur="2.4s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+  <text
+    x="895"
+    y="215"
+    fill="#f9a8d4"
+    font-family="monospace"
+    font-size="15"
+    font-weight="700"
+  >
+    04 / OPEN SOURCE
+  </text>
+
+  <text
+    x="895"
+    y="250"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+  >
+    Build in public
+  </text>
+
+  <text
+    x="895"
+    y="278"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    Contributions • PRs
+  </text>
+
+  <text
+    x="895"
+    y="300"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    Learn • Ship • Collaborate
+  </text>
+
+  <text
+    x="895"
+    y="335"
+    fill="#f472b6"
+    font-family="monospace"
+    font-size="14"
+  >
+    &lt;merge /&gt;
+    <animate
+      attributeName="x"
+      values="895;905;895"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- BORDER                                               -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="428"
+    rx="26"
+    fill="none"
+    stroke="url(#neon)"
+    stroke-width="2"
+    opacity="0.65"
+  />
+
+</svg>

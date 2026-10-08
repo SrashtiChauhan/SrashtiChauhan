@@ -1,0 +1,434 @@
+<svg
+  width="1200"
+  height="300"
+  viewBox="0 0 1200 300"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="55%" stop-color="#0b1024"/>
+      <stop offset="100%" stop-color="#120b24"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <linearGradient id="cyanCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e2630"/>
+      <stop offset="100%" stop-color="#10152b"/>
+    </linearGradient>
+
+    <linearGradient id="purpleCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#191331"/>
+      <stop offset="100%" stop-color="#10152b"/>
+    </linearGradient>
+
+    <pattern
+      id="grid"
+      width="40"
+      height="40"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M40 0H0V40"
+        fill="none"
+        stroke="#334155"
+        stroke-opacity="0.15"
+      />
+    </pattern>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+
+  <!-- BACKGROUND -->
+
+  <rect
+    width="1200"
+    height="300"
+    rx="26"
+    fill="url(#bg)"
+  />
+
+  <rect
+    width="1200"
+    height="300"
+    rx="26"
+    fill="url(#grid)"
+  />
+
+
+  <!-- AMBIENT GLOW -->
+
+  <circle
+    cx="80"
+    cy="60"
+    r="90"
+    fill="#06b6d4"
+    opacity="0.07"
+  />
+
+  <circle
+    cx="1130"
+    cy="250"
+    r="100"
+    fill="#8b5cf6"
+    opacity="0.08"
+  />
+
+
+  <!-- HEADER -->
+
+  <text
+    x="55"
+    y="55"
+    fill="#22d3ee"
+    font-family="monospace"
+    font-size="13"
+    font-weight="700"
+    letter-spacing="3"
+  >
+    // BEYOND THE CODE
+  </text>
+
+  <text
+    x="55"
+    y="88"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="27"
+    font-weight="800"
+  >
+    Things I enjoy.
+  </text>
+
+  <text
+    x="55"
+    y="113"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="12"
+  >
+    EXPLORE • CREATE • LEARN • REPEAT
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- HOBBY CARD 1                                      -->
+  <!-- ================================================= -->
+
+  <rect
+    x="55"
+    y="145"
+    width="255"
+    height="110"
+    rx="17"
+    fill="url(#cyanCard)"
+    stroke="#22d3ee"
+    stroke-opacity="0.45"
+  />
+
+  <rect
+    x="55"
+    y="145"
+    width="255"
+    height="3"
+    rx="2"
+    fill="#22d3ee"
+  />
+
+  <text
+    x="78"
+    y="178"
+    fill="#67e8f9"
+    font-family="monospace"
+    font-size="13"
+    font-weight="700"
+  >
+    01
+  </text>
+
+  <text
+    x="78"
+    y="205"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+  >
+    Building Projects
+  </text>
+
+  <text
+    x="78"
+    y="230"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="11"
+  >
+    turning ideas into code
+  </text>
+
+  <circle
+    cx="280"
+    cy="225"
+    r="7"
+    fill="#22d3ee"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="r"
+      values="5;9;5"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!-- HOBBY CARD 2                                      -->
+  <!-- ================================================= -->
+
+  <rect
+    x="325"
+    y="145"
+    width="255"
+    height="110"
+    rx="17"
+    fill="url(#purpleCard)"
+    stroke="#8b5cf6"
+    stroke-opacity="0.45"
+  />
+
+  <rect
+    x="325"
+    y="145"
+    width="255"
+    height="3"
+    rx="2"
+    fill="#8b5cf6"
+  />
+
+  <text
+    x="348"
+    y="178"
+    fill="#c4b5fd"
+    font-family="monospace"
+    font-size="13"
+    font-weight="700"
+  >
+    02
+  </text>
+
+  <text
+    x="348"
+    y="205"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+  >
+    Open Source
+  </text>
+
+  <text
+    x="348"
+    y="230"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="11"
+  >
+    contribute • collaborate • PR
+  </text>
+
+  
+
+
+  <!-- ================================================= -->
+  <!-- HOBBY CARD 3                                      -->
+  <!-- ================================================= -->
+
+  <rect
+    x="595"
+    y="145"
+    width="255"
+    height="110"
+    rx="17"
+    fill="url(#cyanCard)"
+    stroke="#06b6d4"
+    stroke-opacity="0.45"
+  />
+
+  <rect
+    x="595"
+    y="145"
+    width="255"
+    height="3"
+    rx="2"
+    fill="#06b6d4"
+  />
+
+  <text
+    x="618"
+    y="178"
+    fill="#67e8f9"
+    font-family="monospace"
+    font-size="13"
+    font-weight="700"
+  >
+    03
+  </text>
+
+  <text
+    x="618"
+    y="205"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+  >
+    Learning
+  </text>
+
+  <text
+    x="618"
+    y="230"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="11"
+  >
+    new technologies &amp; ideas
+  </text>
+
+  <circle
+    cx="820"
+    cy="225"
+    r="6"
+    fill="#22d3ee"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.3;1;0.3"
+      dur="1.8s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+
+  <!-- ================================================= -->
+  <!-- HOBBY CARD 4                                      -->
+  <!-- ================================================= -->
+
+  <rect
+    x="865"
+    y="145"
+    width="280"
+    height="110"
+    rx="17"
+    fill="url(#purpleCard)"
+    stroke="#f472b6"
+    stroke-opacity="0.45"
+  />
+
+  <rect
+    x="865"
+    y="145"
+    width="280"
+    height="3"
+    rx="2"
+    fill="#f472b6"
+  />
+
+  <text
+    x="888"
+    y="178"
+    fill="#f9a8d4"
+    font-family="monospace"
+    font-size="13"
+    font-weight="700"
+  >
+    04
+  </text>
+
+  <text
+    x="888"
+    y="205"
+    fill="#f8fafc"
+    font-family="Arial, sans-serif"
+    font-size="19"
+    font-weight="700"
+  >
+    Exploring Ideas
+  </text>
+
+  <text
+    x="888"
+    y="230"
+    fill="#94a3b8"
+    font-family="monospace"
+    font-size="11"
+  >
+    hackathons • experiments • creativity
+  </text>
+
+  <text
+    x="1110"
+    y="230"
+    fill="#f472b6"
+    font-family="monospace"
+    font-size="13"
+  >
+    *
+  </text>
+
+
+  <!-- ================================================= -->
+  <!-- MOVING SCANNER                                    -->
+  <!-- ================================================= -->
+
+  <rect
+    x="55"
+    y="270"
+    width="1090"
+    height="1"
+    fill="url(#neon)"
+    opacity="0.35"
+  >
+    <animate
+      attributeName="x"
+      values="55;1090;55"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+
+  <!-- BORDER -->
+
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="298"
+    rx="26"
+    fill="none"
+    stroke="url(#neon)"
+    stroke-width="2"
+    opacity="0.65"
+  />
+
+</svg>
