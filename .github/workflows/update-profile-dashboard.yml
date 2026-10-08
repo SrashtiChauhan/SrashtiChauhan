@@ -18,7 +18,7 @@ jobs:
     steps:
 
       # ==================================================
-      # CHECKOUT PROFILE REPOSITORY
+      # CHECKOUT
       # ==================================================
 
       - name: Checkout profile repository
@@ -50,7 +50,7 @@ jobs:
 
           gh repo list SrashtiChauhan \
             --limit 100 \
-            --json name,nameWithOwner,url,pushedAt,updatedAt,defaultBranch,isFork,isArchived,stargazerCount,forkCount \
+            --json name,nameWithOwner,url,pushedAt,updatedAt,defaultBranchRef,isFork,isArchived,stargazerCount,forkCount \
             > data/all-repositories.json
 
 
@@ -60,14 +60,14 @@ jobs:
 
 
           # ==================================================
-          # FILTER REPOSITORIES
+          # FILTER AND NORMALIZE REPOSITORIES
           #
           # Remove:
-          # - Profile README repository
-          # - Forked repositories
-          # - Archived repositories
+          # - profile README repository
+          # - forks
+          # - archived repositories
           #
-          # Then sort by newest push.
+          # Sort newest push first.
           # ==================================================
 
           jq '
@@ -83,7 +83,7 @@ jobs:
                   html_url: .url,
                   pushed_at: .pushedAt,
                   updated_at: .updatedAt,
-                  default_branch: .defaultBranch,
+                  default_branch: (.defaultBranchRef.name // "main"),
                   stars: .stargazerCount,
                   forks: .forkCount
                 }
@@ -117,7 +117,7 @@ jobs:
 
 
           # ==================================================
-          # PROCESS EVERY PROJECT
+          # PROCESS EACH PROJECT
           # ==================================================
 
           while IFS= read -r repository; do
@@ -131,7 +131,7 @@ jobs:
 
 
             # ==================================================
-            # GET LATEST COMMIT
+            # LATEST COMMIT
             # ==================================================
 
             latest_commit=$(gh api \
@@ -154,7 +154,7 @@ jobs:
 
 
             # ==================================================
-            # CALCULATE COMMITS FROM LAST 30 DAYS
+            # RECENT COMMITS — LAST 30 DAYS
             # ==================================================
 
             since=$(date -u -d "30 days ago" +"%Y-%m-%dT%H:%M:%SZ")
@@ -183,7 +183,7 @@ jobs:
 
 
             # ==================================================
-            # ADD COMMA BETWEEN JSON OBJECTS
+            # ADD TO JSON ARRAY
             # ==================================================
 
             if [ "$first" = false ]; then
@@ -212,19 +212,27 @@ jobs:
 
 
           # ==================================================
-          # SHOW GENERATED DATA
+          # VALIDATE JSON
           # ==================================================
+
+          jq empty data/project-activity.json
+
 
           echo ""
           echo "=========================================="
-          echo "FINAL PROJECT ACTIVITY"
+          echo "PROJECT ACTIVITY GENERATED"
           echo "=========================================="
 
+
+          jq 'length' data/project-activity.json
+
+
+          echo ""
           cat data/project-activity.json
 
 
       # ==================================================
-      # SAVE UPDATED DATA
+      # COMMIT UPDATED DATA
       # ==================================================
 
       - name: Commit updated activity data
