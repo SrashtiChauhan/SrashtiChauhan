@@ -204,18 +204,104 @@ jobs:
 
 
           # ==================================================
-          # CLEAN TEMPORARY FILES
+          # BUILD REAL 30-DAY ACTIVITY TIMELINE
           # ==================================================
 
-          rm -f data/all-repositories.json
-          rm -f data/active-repositories.json
+          echo ""
+          echo "=========================================="
+          echo "BUILDING ACTIVITY TIMELINE"
+          echo "=========================================="
+
+
+          since=$(date -u -d "30 days ago" +"%Y-%m-%dT%H:%M:%SZ")
+
+
+          # --------------------------------------------------
+          # COLLECT COMMIT DATES FROM ALL ACTIVE REPOSITORIES
+          # --------------------------------------------------
+
+          while IFS= read -r repository; do
+
+            repo=$(echo "$repository" | jq -r '.name')
+
+            echo "Collecting commits: $repo"
+
+
+            gh api \
+              --paginate \
+              "repos/SrashtiChauhan/$repo/commits?since=$since&per_page=100" \
+              --jq '.[] | .commit.author.date'
+
+          done < <(
+            jq -c '.[]' data/active-repositories.json
+          ) \
+          > data/recent-commit-dates.txt
+
+
+          # --------------------------------------------------
+          # CREATE 30-DAY TIMELINE
+          # --------------------------------------------------
+
+          echo "[" > data/activity-timeline.json
+
+          first=true
+
+
+          for offset in $(seq 29 -1 0); do
+
+            date_value=$(date -u -d "$offset days ago" +"%Y-%m-%d")
+
+
+            # Count real commits for this date.
+            if [ -s data/recent-commit-dates.txt ]; then
+
+              commits=$(grep "^$date_value" \
+                data/recent-commit-dates.txt \
+                | wc -l)
+
+            else
+
+              commits=0
+
+            fi
+
+
+            point=$(jq -n \
+              --arg date "$date_value" \
+              --argjson commits "$commits" \
+              '{
+                date: $date,
+                commits: $commits
+              }')
+
+
+            if [ "$first" = false ]; then
+              echo "," >> data/activity-timeline.json
+            fi
+
+
+            echo "$point" >> data/activity-timeline.json
+
+            first=false
+
+          done
+
+
+          echo "]" >> data/activity-timeline.json
 
 
           # ==================================================
-          # VALIDATE JSON
+          # VALIDATE PROJECT DATA
           # ==================================================
 
           jq empty data/project-activity.json
+
+
+          # ==================================================
+          # VALIDATE TIMELINE DATA
+          # ==================================================
+
+          jq empty data/activity-timeline.json
 
 
           echo ""
@@ -228,7 +314,25 @@ jobs:
 
 
           echo ""
-          cat data/project-activity.json
+          echo "=========================================="
+          echo "REAL ACTIVITY TIMELINE GENERATED"
+          echo "=========================================="
+
+
+          jq 'length' data/activity-timeline.json
+
+
+          echo ""
+          jq '.' data/activity-timeline.json
+
+
+          # ==================================================
+          # CLEAN TEMPORARY FILES
+          # ==================================================
+
+          rm -f data/all-repositories.json
+          rm -f data/active-repositories.json
+          rm -f data/recent-commit-dates.txt
 
 
       # ==================================================
@@ -245,6 +349,7 @@ jobs:
 
 
           git add data/project-activity.json
+          git add data/activity-timeline.json
 
 
           if git diff --cached --quiet; then
