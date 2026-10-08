@@ -1,31 +1,14 @@
 [
 {
-  "default_branch": "main",
-  "forks": 0,
-  "full_name": "SrashtiChauhan/QueryNest-ai",
-  "html_url": "https://github.com/SrashtiChauhan/QueryNest-ai",
-  "name": "QueryNest-ai",
-  "pushed_at": "2026-09-20T09:13:27Z",
-  "stars": 0,
-  "updated_at": "2026-09-20T09:13:30Z",
-  "commit_count": 25,
-  "latest_commit": {
-    "date": "2026-09-20T09:13:15Z",
-    "message": "Separate RAG prompt construction from pipeline",
-    "sha": "b1117d34990b17dffebc032253ea625984781b0c"
-  }
-}
-,
-{
-  "default_branch": "main",
-  "forks": 0,
+  "name": "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "full_name": "SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "html_url": "https://github.com/SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
-  "name": "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "pushed_at": "2026-10-08T15:56:01Z",
-  "stars": 0,
   "updated_at": "2026-10-08T15:56:04Z",
-  "commit_count": 64,
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 64,
   "latest_commit": {
     "date": "2026-10-08T15:55:50Z",
     "message": "feat: connect workflow dashboard to backend API",
@@ -34,32 +17,168 @@
 }
 ,
 {
+  "name": "ResolveIQ",
+  "full_name": "SrashtiChauhan/ResolveIQ",
+  "html_url": "https://github.com/SrashtiChauhan/ResolveIQ",
+  "pushed_at": "2026-09-29T17:57:05Z",
+  "updated_at": "2026-09-29T17:57:10Z",
   "default_branch": "main",
-  "forks": 1,
-  "full_name": "SrashtiChauhan/Buildora-AI",
-  "html_url": "https://github.com/SrashtiChauhan/Buildora-AI",
-  "name": "Buildora-AI",
-  "pushed_at": "2026-05-05T18:54:59Z",
   "stars": 0,
-  "updated_at": "2026-05-05T18:55:04Z",
-  "commit_count": 20,
+  "forks": 0,
+  "recent_commit_count": 6,
   "latest_commit": {
-    "date": "2026-05-05T18:54:59Z",
-    "message": "Merge pull request #1 from SrashtiChauhan/personalBranch\n\nRefactor backend logic and clean up frontend code; fix validation and routing issues",
-    "sha": "89c2c02e325b0d8309773f11e15c95b7e62db957"
+    "date": "2026-09-29T17:57:05Z",
+    "message": "Update README.md",
+    "sha": "76dba382cc145caa92f1e16303300e54c39e5d2e"
   }
 }
 ,
 {
+  "name": "Hackathon-ZeoLag-edu",
+  "full_name": "SrashtiChauhan/Hackathon-ZeoLag-edu",
+  "html_url": "https://github.com/SrashtiChauhan/Hackathon-ZeoLag-edu",
+  "pushed_at": "2026-09-28T05:37:23Z",
+  "updated_at": "2026-09-28T05:37:27Z",
   "default_branch": "main",
+  "stars": 0,
+  "forks": 1,
+  "recent_commit_count": 3,
+  "latest_commit": {
+    "date": "2026-09-28T05:37:22Z",
+    "message": "Merge pull request #1 from shreyaChoudhry/feature/nexus-backend\n\nfeat: add NexusStream RTC backend",
+    "sha": "ea70f2c995f52dcde254eb53e6e6b3e12cdf8010"
+  }
+}
+,
+{
+  "name": "QueryNest-ai",
+  "full_name": "SrashtiChauhan/QueryNest-ai",
+  "html_url": "https://github.com/SrashtiChauhan/QueryNest-ai",
+  "pushed_at": "2026-09-20T09:13:27Z",
+  "updated_at": "2026-09-20T09:13:30Z",
+  "default_branch": "main",
+  "stars": 0,
   "forks": 0,
+  "recent_commit_count": 25,
+  "latest_commit": {
+    "date": "2026-09-20T09:13:15Z",
+    "message": "Separate RAG prompt construction from pipeline",
+    "sha": "b1117d34990b17dffebc032253ea625984781b0c"
+  }
+}
+,
+{
+  "name": "VyaparMitra-AI-Merchant-Growth-Agent",
+  "full_name": "SrashtiChauhan/VyaparMitra-AI-Merchant-Growth-Agent",
+  "html_url": "https://github.com/SrashtiChauhan/VyaparMitra-AI-Merchant-Growth-Agent",
+  "pushed_at": "2026-09-16T08:19:01Z",
+  "updated_at": "2026-09-16T08:19:06Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 1,
+  "recent_commit_count": 5,
+  "latest_commit": {
+    "date": "2026-09-16T08:19:01Z",
+    "message": "Merge pull request #1 from pra-chauhan/patch-1\n\nFixed mobile navigation",
+    "sha": "3baa758bd700ce3e70897724163ee15f35124f69"
+  }
+}
+,
+{
+  "name": "PAYTM-VYAPARMITRA-AI",
+  "full_name": "SrashtiChauhan/PAYTM-VYAPARMITRA-AI",
+  "html_url": "https://github.com/SrashtiChauhan/PAYTM-VYAPARMITRA-AI",
+  "pushed_at": "2026-09-16T06:13:24Z",
+  "updated_at": "2026-09-16T06:13:28Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 5,
+  "latest_commit": {
+    "date": "2026-09-16T06:13:24Z",
+    "message": "Add MIT License to the project",
+    "sha": "d85914171af5184087600dabec5862df28915f85"
+  }
+}
+,
+{
+  "name": "Frontend-UI-Collection",
+  "full_name": "SrashtiChauhan/Frontend-UI-Collection",
+  "html_url": "https://github.com/SrashtiChauhan/Frontend-UI-Collection",
+  "pushed_at": "2026-08-30T09:27:26Z",
+  "updated_at": "2026-08-30T09:28:08Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-08-30T09:26:05Z",
+    "message": "art work ui",
+    "sha": "a5df64e63e3c07d339f660384f711624ee744d2c"
+  }
+}
+,
+{
+  "name": "MyArchive",
+  "full_name": "SrashtiChauhan/MyArchive",
+  "html_url": "https://github.com/SrashtiChauhan/MyArchive",
+  "pushed_at": "2026-08-28T19:38:10Z",
+  "updated_at": "2026-08-28T19:45:38Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-08-28T19:37:59Z",
+    "message": "about section",
+    "sha": "6e8adf06096631b8c57f573d6806e1500da6e5da"
+  }
+}
+,
+{
+  "name": "Calculator",
+  "full_name": "SrashtiChauhan/Calculator",
+  "html_url": "https://github.com/SrashtiChauhan/Calculator",
+  "pushed_at": "2026-07-12T20:11:29Z",
+  "updated_at": "2026-07-12T20:11:36Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-07-12T20:11:29Z",
+    "message": "Create README.md",
+    "sha": "0635c9467e002d678a22bc89edf76e124806d436"
+  }
+}
+,
+{
+  "name": "FinTrack-Pro",
+  "full_name": "SrashtiChauhan/FinTrack-Pro",
+  "html_url": "https://github.com/SrashtiChauhan/FinTrack-Pro",
+  "pushed_at": "2026-06-29T08:54:31Z",
+  "updated_at": "2026-06-29T09:07:12Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-06-29T08:54:30Z",
+    "message": "Update README.md",
+    "sha": "34af84dcfd4bf73cfbec179880f2ca58c3bdf56d"
+  }
+}
+,
+{
+  "name": "PulseMeet",
   "full_name": "SrashtiChauhan/PulseMeet",
   "html_url": "https://github.com/SrashtiChauhan/PulseMeet",
-  "name": "PulseMeet",
   "pushed_at": "2026-06-10T11:20:49Z",
-  "stars": 0,
   "updated_at": "2026-06-10T11:20:54Z",
-  "commit_count": 16,
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
   "latest_commit": {
     "date": "2026-06-10T11:20:49Z",
     "message": "Update README to remove internship details\n\nRemoved specific internship reference from project description and author section.",
@@ -68,15 +187,49 @@
 }
 ,
 {
+  "name": "Github-user-finder",
+  "full_name": "SrashtiChauhan/Github-user-finder",
+  "html_url": "https://github.com/SrashtiChauhan/Github-user-finder",
+  "pushed_at": "2026-06-07T12:14:20Z",
+  "updated_at": "2026-06-07T12:14:24Z",
   "default_branch": "main",
+  "stars": 1,
   "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-06-07T12:14:20Z",
+    "message": "Rename script2.js to script.js",
+    "sha": "07aa3ed70633f2e40dac3f4244370b36077e9781"
+  }
+}
+,
+{
+  "name": "Portfolio-Srashti-Chauhan",
+  "full_name": "SrashtiChauhan/Portfolio-Srashti-Chauhan",
+  "html_url": "https://github.com/SrashtiChauhan/Portfolio-Srashti-Chauhan",
+  "pushed_at": "2026-05-31T14:05:29Z",
+  "updated_at": "2026-05-31T14:05:33Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-05-31T14:05:23Z",
+    "message": "updated projects",
+    "sha": "7fb8a8b089dc7cb1545660da64881902be80aea8"
+  }
+}
+,
+{
+  "name": "college-discovery-platform",
   "full_name": "SrashtiChauhan/college-discovery-platform",
   "html_url": "https://github.com/SrashtiChauhan/college-discovery-platform",
-  "name": "college-discovery-platform",
   "pushed_at": "2026-05-09T04:49:33Z",
-  "stars": 1,
   "updated_at": "2026-05-09T04:49:36Z",
-  "commit_count": 4,
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
   "latest_commit": {
     "date": "2026-05-09T04:49:32Z",
     "message": "Update README.md",
@@ -85,19 +238,325 @@
 }
 ,
 {
+  "name": "Buildora-AI",
+  "full_name": "SrashtiChauhan/Buildora-AI",
+  "html_url": "https://github.com/SrashtiChauhan/Buildora-AI",
+  "pushed_at": "2026-05-05T18:54:59Z",
+  "updated_at": "2026-05-05T18:55:04Z",
   "default_branch": "main",
-  "forks": 0,
-  "full_name": "SrashtiChauhan/Frontend-UI-Collection",
-  "html_url": "https://github.com/SrashtiChauhan/Frontend-UI-Collection",
-  "name": "Frontend-UI-Collection",
-  "pushed_at": "2026-08-30T09:27:26Z",
   "stars": 0,
-  "updated_at": "2026-08-30T09:28:08Z",
-  "commit_count": 11,
+  "forks": 1,
+  "recent_commit_count": 0,
   "latest_commit": {
-    "date": "2026-08-30T09:26:05Z",
-    "message": "art work ui",
-    "sha": "a5df64e63e3c07d339f660384f711624ee744d2c"
+    "date": "2026-05-05T18:54:59Z",
+    "message": "Merge pull request #1 from SrashtiChauhan/personalBranch\n\nRefactor backend logic and clean up frontend code; fix validation and routing issues",
+    "sha": "89c2c02e325b0d8309773f11e15c95b7e62db957"
+  }
+}
+,
+{
+  "name": "VoteWise-AI",
+  "full_name": "SrashtiChauhan/VoteWise-AI",
+  "html_url": "https://github.com/SrashtiChauhan/VoteWise-AI",
+  "pushed_at": "2026-05-02T09:42:01Z",
+  "updated_at": "2026-05-02T09:42:05Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-05-02T09:42:01Z",
+    "message": "Initialize README with project details and instructions\n\nAdded detailed project description, features, tech stack, setup instructions, API endpoint, security measures, demo links, use cases, future improvements, contributing guidelines, license information, and author details.",
+    "sha": "7682a124d6ec059ccf094cbe5e65df43ee6e4972"
+  }
+}
+,
+{
+  "name": "Diabetes-onset-prediction",
+  "full_name": "SrashtiChauhan/Diabetes-onset-prediction",
+  "html_url": "https://github.com/SrashtiChauhan/Diabetes-onset-prediction",
+  "pushed_at": "2026-04-25T16:55:56Z",
+  "updated_at": "2026-04-25T16:56:01Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-04-25T16:55:00Z",
+    "message": "add comments",
+    "sha": "cf957f27034ee48f2a339750aeca4779121200aa"
+  }
+}
+,
+{
+  "name": "Fraud-Detection-Using-Machine-Learning",
+  "full_name": "SrashtiChauhan/Fraud-Detection-Using-Machine-Learning",
+  "html_url": "https://github.com/SrashtiChauhan/Fraud-Detection-Using-Machine-Learning",
+  "pushed_at": "2026-04-19T16:55:54Z",
+  "updated_at": "2026-04-19T16:55:59Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-04-19T16:48:22Z",
+    "message": "Initial commit with gitignore",
+    "sha": "7f8ae01db660c5d4d3898ab58414829843e73505"
+  }
+}
+,
+{
+  "name": "Smart-Venue-AI",
+  "full_name": "SrashtiChauhan/Smart-Venue-AI",
+  "html_url": "https://github.com/SrashtiChauhan/Smart-Venue-AI",
+  "pushed_at": "2026-04-15T17:09:28Z",
+  "updated_at": "2026-04-16T04:03:39Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-04-15T17:09:16Z",
+    "message": "remove files from frontend",
+    "sha": "4732deb47a94547da7ae6b196e4808d776692c3c"
+  }
+}
+,
+{
+  "name": "MiniDev-projects-collection",
+  "full_name": "SrashtiChauhan/MiniDev-projects-collection",
+  "html_url": "https://github.com/SrashtiChauhan/MiniDev-projects-collection",
+  "pushed_at": "2026-04-12T03:31:56Z",
+  "updated_at": "2026-06-07T12:26:48Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-04-12T03:31:56Z",
+    "message": "Update README.md",
+    "sha": "2fd581e0577aa5818bbaf616f6a36b84dbecf92c"
+  }
+}
+,
+{
+  "name": "GraphShield-AI-Real-Time-Fraud-Detection-Risk-Analytics-Platform",
+  "full_name": "SrashtiChauhan/GraphShield-AI-Real-Time-Fraud-Detection-Risk-Analytics-Platform",
+  "html_url": "https://github.com/SrashtiChauhan/GraphShield-AI-Real-Time-Fraud-Detection-Risk-Analytics-Platform",
+  "pushed_at": "2026-03-27T18:19:27Z",
+  "updated_at": "2026-03-27T18:19:31Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-03-27T18:19:27Z",
+    "message": "Remove support section from README",
+    "sha": "56940f268de7e4fa40bdeea4a315273150137f90"
+  }
+}
+,
+{
+  "name": "HackerRank-daily",
+  "full_name": "SrashtiChauhan/HackerRank-daily",
+  "html_url": "https://github.com/SrashtiChauhan/HackerRank-daily",
+  "pushed_at": "2026-03-09T18:00:41Z",
+  "updated_at": "2026-03-09T18:00:49Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-03-09T18:00:41Z",
+    "message": "Update day11_deleteNodeFromParticularPoint.cpp",
+    "sha": "79f38c534fb19598e313c25323796a811d955e68"
+  }
+}
+,
+{
+  "name": "srashti-binance-bot",
+  "full_name": "SrashtiChauhan/srashti-binance-bot",
+  "html_url": "https://github.com/SrashtiChauhan/srashti-binance-bot",
+  "pushed_at": "2026-02-26T18:26:26Z",
+  "updated_at": "2026-02-26T18:26:30Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-02-26T18:26:26Z",
+    "message": "Update README.md",
+    "sha": "053f32d222b73bb6bf708f4d1428117cb25f5a05"
+  }
+}
+,
+{
+  "name": "Machine-Learning-Projects",
+  "full_name": "SrashtiChauhan/Machine-Learning-Projects",
+  "html_url": "https://github.com/SrashtiChauhan/Machine-Learning-Projects",
+  "pushed_at": "2026-02-21T15:25:29Z",
+  "updated_at": "2026-02-21T15:25:32Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-02-21T15:25:22Z",
+    "message": "Removed duplicate root files and cleaned structure",
+    "sha": "f10f11be24203b27103d23b251e3ee6a44289adc"
+  }
+}
+,
+{
+  "name": "react_project",
+  "full_name": "SrashtiChauhan/react_project",
+  "html_url": "https://github.com/SrashtiChauhan/react_project",
+  "pushed_at": "2025-12-27T16:03:20Z",
+  "updated_at": "2025-12-27T16:03:24Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-12-27T15:58:46Z",
+    "message": "Initial commit",
+    "sha": "4372cbbf6cfb3a86650958ae46ad9f974493add3"
+  }
+}
+,
+{
+  "name": "Fingerprint-Recognition-System",
+  "full_name": "SrashtiChauhan/Fingerprint-Recognition-System",
+  "html_url": "https://github.com/SrashtiChauhan/Fingerprint-Recognition-System",
+  "pushed_at": "2025-11-29T04:49:50Z",
+  "updated_at": "2025-12-23T15:28:43Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-11-29T04:49:48Z",
+    "message": "Add files via upload",
+    "sha": "5b2d59b06c269383ca982d30bf903733db13ccfa"
+  }
+}
+,
+{
+  "name": "Fake-Social-Media-Detection",
+  "full_name": "SrashtiChauhan/Fake-Social-Media-Detection",
+  "html_url": "https://github.com/SrashtiChauhan/Fake-Social-Media-Detection",
+  "pushed_at": "2025-11-26T18:38:37Z",
+  "updated_at": "2025-12-23T15:28:44Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-11-26T18:38:37Z",
+    "message": "Created using Colab",
+    "sha": "019f1e461f6d869bf359467e1275c47f3c6e0e54"
+  }
+}
+,
+{
+  "name": "EduCircleWebsite",
+  "full_name": "SrashtiChauhan/EduCircleWebsite",
+  "html_url": "https://github.com/SrashtiChauhan/EduCircleWebsite",
+  "pushed_at": "2025-11-06T09:09:04Z",
+  "updated_at": "2025-12-23T15:28:45Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-11-06T09:09:03Z",
+    "message": " EduCircleWebsite\n\nUpdated project title and removed template description.",
+    "sha": "9407f40982cd6d2891b94f3234a60039db43e660"
+  }
+}
+,
+{
+  "name": "Edu-Circle-Website",
+  "full_name": "SrashtiChauhan/Edu-Circle-Website",
+  "html_url": "https://github.com/SrashtiChauhan/Edu-Circle-Website",
+  "pushed_at": "2025-09-17T07:24:28Z",
+  "updated_at": "2025-12-23T15:28:47Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-09-17T07:24:28Z",
+    "message": "Update README.md",
+    "sha": "738cfd3db4f5cc45e18590f0cb6bb866183b4e1a"
+  }
+}
+,
+{
+  "name": "Rock-Paper-Scissors",
+  "full_name": "SrashtiChauhan/Rock-Paper-Scissors",
+  "html_url": "https://github.com/SrashtiChauhan/Rock-Paper-Scissors",
+  "pushed_at": "2025-06-27T16:16:21Z",
+  "updated_at": "2026-06-07T12:24:56Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-06-27T16:16:21Z",
+    "message": "Update README.md",
+    "sha": "8551e4bccc801d70cf03ad832401155fce8acb03"
+  }
+}
+,
+{
+  "name": "Tic-Tac-Toe-Game",
+  "full_name": "SrashtiChauhan/Tic-Tac-Toe-Game",
+  "html_url": "https://github.com/SrashtiChauhan/Tic-Tac-Toe-Game",
+  "pushed_at": "2025-06-08T07:54:12Z",
+  "updated_at": "2026-06-07T12:23:33Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-06-08T07:54:12Z",
+    "message": "Update README.md",
+    "sha": "89c32ba1622a621bb7b08401f9b68a0e04ba5bab"
+  }
+}
+,
+{
+  "name": "Simple-Web-Portfolio",
+  "full_name": "SrashtiChauhan/Simple-Web-Portfolio",
+  "html_url": "https://github.com/SrashtiChauhan/Simple-Web-Portfolio",
+  "pushed_at": "2025-06-04T20:03:44Z",
+  "updated_at": "2025-12-23T15:28:52Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-06-04T20:03:44Z",
+    "message": "Update README.md",
+    "sha": "ed3dc863b9b8cf1d01eb312302321a411786027b"
+  }
+}
+,
+{
+  "name": "Weather-Web-Application",
+  "full_name": "SrashtiChauhan/Weather-Web-Application",
+  "html_url": "https://github.com/SrashtiChauhan/Weather-Web-Application",
+  "pushed_at": "2025-05-30T13:18:54Z",
+  "updated_at": "2026-06-07T12:16:38Z",
+  "default_branch": "main",
+  "stars": 1,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2025-05-30T13:18:54Z",
+    "message": "Create README.md",
+    "sha": "e586f33a19641c96a5f5b5400e8ad1e6ccf47ee3"
   }
 }
 ]
