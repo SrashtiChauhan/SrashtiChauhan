@@ -3,16 +3,16 @@
   "name": "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "full_name": "SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "html_url": "https://github.com/SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
-  "pushed_at": "2026-10-12T18:53:11Z",
-  "updated_at": "2026-10-12T18:53:14Z",
+  "pushed_at": "2026-10-14T18:00:54Z",
+  "updated_at": "2026-10-14T18:01:11Z",
   "default_branch": "main",
   "stars": 0,
   "forks": 0,
-  "recent_commit_count": 63,
+  "recent_commit_count": 65,
   "latest_commit": {
-    "date": "2026-10-12T18:53:03Z",
-    "message": "docs: record workflow persistence verification",
-    "sha": "255aa793f237e52775173b24522b2d61ce5b65d7"
+    "date": "2026-10-14T18:00:48Z",
+    "message": "feat: complete Agent Studio CRUD endpoints",
+    "sha": "9c6fd8b50f6d31a42e8ef8655a1f9fb4d733fa6c"
   }
 }
 ,
