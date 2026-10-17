@@ -3,16 +3,16 @@
   "name": "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "full_name": "SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "html_url": "https://github.com/SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
-  "pushed_at": "2026-10-16T19:09:17Z",
-  "updated_at": "2026-10-16T19:09:20Z",
+  "pushed_at": "2026-10-17T13:19:10Z",
+  "updated_at": "2026-10-17T13:19:13Z",
   "default_branch": "main",
   "stars": 0,
   "forks": 0,
-  "recent_commit_count": 63,
+  "recent_commit_count": 65,
   "latest_commit": {
-    "date": "2026-10-16T19:09:08Z",
-    "message": "feat: add Ollama LLM execution service",
-    "sha": "b3ad2fcfd7186c08ec2607d2bf30b2ff09134a6b"
+    "date": "2026-10-17T13:19:06Z",
+    "message": "fix: replace any types with React Flow types",
+    "sha": "28f54b728d23413ee7c5568aeb0de8e0de569630"
   }
 }
 ,
