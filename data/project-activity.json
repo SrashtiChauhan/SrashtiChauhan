@@ -3,16 +3,16 @@
   "name": "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "full_name": "SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "html_url": "https://github.com/SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
-  "pushed_at": "2026-10-18T05:52:54Z",
-  "updated_at": "2026-10-18T05:52:57Z",
+  "pushed_at": "2026-10-18T07:35:43Z",
+  "updated_at": "2026-10-18T07:35:46Z",
   "default_branch": "main",
   "stars": 0,
   "forks": 0,
-  "recent_commit_count": 72,
+  "recent_commit_count": 78,
   "latest_commit": {
-    "date": "2026-10-18T05:52:47Z",
-    "message": "refactor: use agent execution service in API route",
-    "sha": "85d4e7034224d16ab7b9afcaa49f4daf00f943a8"
+    "date": "2026-10-18T07:35:32Z",
+    "message": "test: verify workflow stops on agent failure",
+    "sha": "25a662f88bbb6ab54f5592e583b22282460b5e42"
   }
 }
 ,
