@@ -42,7 +42,7 @@
   "default_branch": "main",
   "stars": 0,
   "forks": 1,
-  "recent_commit_count": 3,
+  "recent_commit_count": 0,
   "latest_commit": {
     "date": "2026-09-28T05:37:22Z",
     "message": "Merge pull request #1 from shreyaChoudhry/feature/nexus-backend\n\nfeat: add NexusStream RTC backend",
