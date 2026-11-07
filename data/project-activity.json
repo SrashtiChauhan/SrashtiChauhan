@@ -8,7 +8,7 @@
   "default_branch": "main",
   "stars": 0,
   "forks": 0,
-  "recent_commit_count": 45,
+  "recent_commit_count": 44,
   "latest_commit": {
     "date": "2026-11-03T17:46:00Z",
     "message": "feat: add tool selection UI to Agent Studio",
