@@ -3,16 +3,16 @@
   "name": "Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "full_name": "SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
   "html_url": "https://github.com/SrashtiChauhan/Agentic_Srishti--FlowPilot-Enterprise-Workflow-Orchestration-Platform",
-  "pushed_at": "2026-11-03T17:53:15Z",
-  "updated_at": "2026-11-03T17:53:19Z",
+  "pushed_at": "2026-11-10T10:56:19Z",
+  "updated_at": "2026-11-10T10:56:23Z",
   "default_branch": "main",
   "stars": 0,
   "forks": 0,
-  "recent_commit_count": 40,
+  "recent_commit_count": 43,
   "latest_commit": {
-    "date": "2026-11-03T17:46:00Z",
-    "message": "feat: add tool selection UI to Agent Studio",
-    "sha": "a0714228344aed4e0facac47cbdc3be9f17ff1e4"
+    "date": "2026-11-10T10:56:17Z",
+    "message": "refactor: validate tool inputs and outputs using registry schemas",
+    "sha": "0d66be34bd7019c2094491fd3982c6c2c32089cd"
   }
 }
 ,
