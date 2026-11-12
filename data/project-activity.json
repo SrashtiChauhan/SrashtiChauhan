@@ -51,6 +51,23 @@
 }
 ,
 {
+  "name": "BIOSECURE-BORDER-AI",
+  "full_name": "SrashtiChauhan/BIOSECURE-BORDER-AI",
+  "html_url": "https://github.com/SrashtiChauhan/BIOSECURE-BORDER-AI",
+  "pushed_at": "2026-09-27T08:44:25Z",
+  "updated_at": "2026-09-27T13:12:21Z",
+  "default_branch": "main",
+  "stars": 0,
+  "forks": 0,
+  "recent_commit_count": 0,
+  "latest_commit": {
+    "date": "2026-09-27T08:44:04Z",
+    "message": "Initial commit: BioSecure-Border SIH26187 Platform & Documentation",
+    "sha": "9fced4fcd2be7ccde32768df7429f606d56e2ce5"
+  }
+}
+,
+{
   "name": "QueryNest-ai",
   "full_name": "SrashtiChauhan/QueryNest-ai",
   "html_url": "https://github.com/SrashtiChauhan/QueryNest-ai",
