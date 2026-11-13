@@ -8,7 +8,7 @@
   "default_branch": "main",
   "stars": 0,
   "forks": 0,
-  "recent_commit_count": 46,
+  "recent_commit_count": 43,
   "latest_commit": {
     "date": "2026-11-11T06:24:25Z",
     "message": "test: add agent tool-calling security and failure-path tests",
