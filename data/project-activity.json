@@ -8,7 +8,7 @@
   "default_branch": "main",
   "stars": 0,
   "forks": 0,
-  "recent_commit_count": 48,
+  "recent_commit_count": 47,
   "latest_commit": {
     "date": "2026-11-14T05:02:50Z",
     "message": "feat: add output format selector to Agent Studio",
